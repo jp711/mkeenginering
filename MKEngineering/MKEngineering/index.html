@@ -20,6 +20,16 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <title>MKEnginering &mdash; !</title>
   </head>
@@ -27,7 +37,8 @@
     <main>
       <header class="header">
         <a href="#">
-          <img class="logo" alt="logo" src="img/logox4.PNG" />
+          <img class="logo-big" alt="logo" src="img/logox4.PNG" />
+          <img class="logo-small" alt="logo" src="img/logo.png" />
         </a>
 
         <nav class="main-nav">
@@ -39,9 +50,10 @@
             <li>
               <a class="main-nav-link" href="#">ZESPÓŁ</a>
             </li>
+            <li><a class="main-nav-link nav-cta" href="#">KONTAKT</a></li>
           </ul>
         </nav>
-        <btn><a class="main-nav-link nav-cta" href="#">KONTAKT</a></btn>
+
         <div class="flags">
           <a href="#">
             <img class="flag" alt="UK flag" src="img/flag-uk.png" />
@@ -53,9 +65,15 @@
             <img class="flag" alt="UK flag" src="img/flag-polish.png" />
           </a>
         </div>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </header>
       <section class="section-profile">
-        <span class="profil-text">PROFIL</span>
+        <div class="section-profile-img">
+          <span class="profil-text">PROFIL</span>
+        </div>
       </section>
 
       <section class="lata-doswiadczen container">
@@ -114,45 +132,36 @@
             <img class="map" alt="Word map" src="img/mapa.svg" />
           </div>
         </div>
-        <div class="globalny-zasieg-flag container">
-          <div class="flag-box">
-            <img
-              class="zasieg-flag"
-              alt="Denmark flag"
-              src="img/flag-denmark.svg"
-            />
-          </div>
-          <div class="flag-box">
-            <img
-              class="zasieg-flag"
-              alt="Denmark flag"
-              src="img/flag-denmark.svg"
-            />
-          </div>
+        <div class="globalny-zasieg-flag">
+          <img
+            class="zasieg-flag"
+            alt="Denmark flag"
+            src="img/flag-denmark.svg"
+          />
 
-          <div class="flag-box">
-            <img
-              class="zasieg-flag"
-              alt="Denmark flag"
-              src="img/flag-denmark.svg"
-            />
-          </div>
+          <img
+            class="zasieg-flag"
+            alt="Denmark flag"
+            src="img/flag-denmark.svg"
+          />
 
-          <div class="flag-box">
-            <img
-              class="zasieg-flag"
-              alt="Denmark flag"
-              src="img/flag-denmark.svg"
-            />
-          </div>
+          <img
+            class="zasieg-flag"
+            alt="Denmark flag"
+            src="img/flag-denmark.svg"
+          />
 
-          <div class="flag-box">
-            <img
-              class="zasieg-flag"
-              alt="Denmark flag"
-              src="img/flag-denmark.svg"
-            />
-          </div>
+          <img
+            class="zasieg-flag"
+            alt="Denmark flag"
+            src="img/flag-denmark.svg"
+          />
+
+          <img
+            class="zasieg-flag"
+            alt="Denmark flag"
+            src="img/flag-denmark.svg"
+          />
         </div>
 
         <div class="zasieg-cel container-2">
@@ -164,8 +173,8 @@
             </p>
           </div>
           <div class="zasieg-cel-btn">
-            <btn><a class="main-nav-link zas-cta" href="#">PRODUKTY</a></btn>
-            <btn><a class="main-nav-link zas-cta" href="#">KONTAKT</a></btn>
+            <a class="main-nav-link zas-cta" href="#">PRODUKTY</a>
+            <a class="main-nav-link zas-cta" href="#">KONTAKT</a>
           </div>
         </div>
       </section>

@@ -45,6 +45,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #000;
+  overflow-x: hidden;
 }
 
 .header {
@@ -58,10 +59,33 @@ body {
   padding-right: 0.8rem;
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
+  position: relative;
 }
 
-.logo {
+.logo-big {
   height: 8rem;
+}
+.logo-small {
+  display: none;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 .main-nav-link:link,
@@ -88,6 +112,7 @@ body {
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   /* margin-left: 9.6rem; */
+
   font-weight: medium;
   padding: 1.6rem 4.8rem;
   border-width: 0.2rem;
@@ -118,7 +143,7 @@ body {
   /* border: 3px solid #fdf2e9; */
 }
 
-.section-profile {
+.section-profile-img {
   position: relative;
   background-image: linear-gradient(
       to right,
@@ -183,8 +208,10 @@ body {
 }
 
 .globalny-zasieg-flag {
+  max-width: 95rem;
+  margin: 0 auto;
   display: flex;
-  gap: 4.8rem;
+  /* gap: 4.8rem; */
   margin-bottom: 6.4rem !important;
   justify-content: space-between;
 }
@@ -338,7 +365,7 @@ body {
 
 .container {
   /* 1140px */
-  max-width: 100%;
+  max-width: 160rem;
   /* padding: 0 3.2rem; */
   margin: 0 auto;
 }
