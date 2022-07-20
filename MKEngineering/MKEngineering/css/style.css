@@ -56,7 +56,7 @@ body {
   gap: 2.4rem;
   height: 4.8rem;
   padding-left: 6.4rem;
-  padding-right: 0.8rem;
+  padding-right: 6.4rem;
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
   position: relative;
@@ -280,23 +280,25 @@ body {
   background-color: #3e3e3e;
   padding: 2.4rem 4.8rem 2.4rem 4.8rem;
 }
-.footer-flex {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 4.8rem;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, max-content);
+  padding-bottom: 2.2rem;
+  row-gap: 2.4rem;
 }
-.footer-left,
+/* .footer-left,
 .footer-right {
   display: flex;
   gap: 12.6rem;
-}
+} */
 
 .footer-link:link,
 .footer-link:visited {
   font-size: 1.8rem;
   color: #fff;
   text-decoration: none;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.3rem;
 }
 
 .footer-link:hover,
@@ -311,7 +313,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.6rem;
+}
+.tel {
+  grid-column: 4/5;
 }
 
 .footer-contact:hover,
@@ -334,32 +339,52 @@ body {
   padding-top: 0.6rem;
   font-size: 1.8rem;
   color: #fff;
-  border-top: 2px solid #c4c4c4;
+  /* border-top: 2px solid #c4c4c4; */
 }
 
 .footer-author {
   color: #ffd540;
   font-weight: 700;
 }
-.img-pos {
-  position: relative;
-}
 
 .footer-logo {
   width: 8rem;
   height: 7.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.logo-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+hr.footer-hr-right,
+hr.footer-hr-left {
+  border: none;
+  height: 2px;
+  background: #fff;
+}
+hr.footer-hr-left {
+  grid-column: 1/2;
+  grid-row: 3;
+}
+
+hr.footer-hr-right {
+  grid-row: 3;
+  grid-column: 4/5;
+}
+
+.to-right {
+  text-align: right;
+}
+.left-text {
+  grid-column: 1/2;
+  grid-row: 4;
 }
 
 .right-text {
-  padding-left: 42rem;
-}
-
-.left-text {
-  padding-right: 42rem;
+  grid-column: 4/5;
 }
 
 /**************************/
