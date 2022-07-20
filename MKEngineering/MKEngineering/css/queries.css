@@ -184,4 +184,60 @@
     text-align: center;
     padding: 2rem 2rem;
   }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, max-content);
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .footer-link {
+    font-size: 1.8rem;
+  }
+
+  .footer-text {
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+
+  .footer-link,
+  .tel,
+  .mail,
+  .logo-con,
+  .to-right,
+  .left-text,
+  .right-text,
+  .footer-copy {
+    grid-column: 1/2;
+  }
+  .tel {
+    grid-row: 5;
+  }
+  .mail {
+    grid-row: 6;
+  }
+
+  .logo-con {
+    grid-row: 7;
+    display: block;
+  }
+
+  .to-right {
+    text-align: left;
+  }
+  .footer-copy {
+    grid-row: 8/9;
+  }
+  .footer-JP {
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+
+  .logo-con {
+    grid-row: 7;
+  }
 }
